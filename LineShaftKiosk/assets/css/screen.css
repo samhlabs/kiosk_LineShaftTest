@@ -828,6 +828,7 @@ input[type="checkbox"]:focus {
 
 .video-controls {
   margin-top: 40px;
+  list-style: none;
 }
 .video-controls li {
   padding: 25px;
