@@ -94,11 +94,11 @@ body {
 }
 
 a {
-  color: #c64f24;
+  color: #ff7659;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
-  color: #67b2b1;
+  color: #51dfaa;
 }
 
 /* ::Import styles */
@@ -829,41 +829,58 @@ input[type="checkbox"]:focus {
 .control-center {
   position: relative;
   display: block;
-  width: 1620px;
+  width: 1770px;
   height: 1080px;
-  margin: 0 auto;
-  background: #222;
+  margin: 0 150px;
+  background: #34363c;
   padding: 250px;
   overflow: hidden;
 }
 
 .cc-button {
   display: inline-block;
-  padding: 100px;
+  padding: 125px;
   color: #fff;
+  margin: 0;
+  -moz-box-shadow: 0px 3px 10px 3px #323232;
+  -webkit-box-shadow: 0px 3px 10px 3px #323232;
+  box-shadow: 0px 3px 10px 3px #323232;
+}
+.cc-button .icon {
+  width: 100px;
+  height: 100px;
 }
 
 .cc-button:first-child {
-  background: #c64f24;
+  background: #ff7659;
 }
 
 .cc-button:nth-child(2) {
-  background: #a8d9f4;
+  background: #00b6dd;
 }
 
 .cc-button:nth-child(3) {
-  background: #67b2b1;
+  background: #51dfaa;
+}
+
+.cc-button:nth-child(4) {
+  background: #9e78c0;
+}
+
+.video-controls_wrap {
+  overflow: hidden;
 }
 
 .video-controls {
   position: absolute;
   list-style: none;
+  background: #21252d;
+  height: 100vh;
+  width: 100%;
 }
 .video-controls li a {
-  display: block;
-  z-index: 200;
-  padding: 30px 20px;
-  color: #fff;
+  display: inline-block;
+  padding: 45px;
 }
 
 /* ::Print */
