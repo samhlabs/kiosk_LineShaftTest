@@ -89,7 +89,7 @@ html {
 }
 
 body {
-  background: #222;
+  background: #333;
   color: #777;
 }
 
@@ -826,25 +826,37 @@ input[type="checkbox"]:focus {
   overflow: hidden;
 }
 
-.video-placeholder {
+.control-center {
   display: block;
   width: 1620px;
   height: 1080px;
   margin: 0 auto;
-  background: #888;
+  background: #222;
+  padding: 250px;
+}
+
+.cc-button {
+  display: inline-block;
+  padding: 100px;
+  color: #fff;
+}
+
+.cc-button:first-child {
+  background: #c64f24;
+}
+
+.cc-button:nth-child(2) {
+  background: #a8d9f4;
 }
 
 .video-controls {
   position: absolute;
-  margin-top: 40px;
   list-style: none;
 }
-.video-controls li {
-  padding: 25px;
-}
 .video-controls li a {
+  display: block;
   z-index: 200;
-  padding: 10px;
+  padding: 30px 20px;
   color: #fff;
 }
 
