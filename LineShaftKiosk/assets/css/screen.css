@@ -852,7 +852,7 @@ input[type="checkbox"]:focus {
 }
 
 .cc-button:first-child {
-  background: #ff7659;
+  background: #51dfaa;
 }
 
 .cc-button:nth-child(2) {
@@ -878,9 +878,12 @@ input[type="checkbox"]:focus {
   height: 100vh;
   width: 100%;
 }
+.video-controls li {
+  display: block;
+}
 .video-controls li a {
   display: inline-block;
-  padding: 45px;
+  padding: 40px 50px;
 }
 
 /* ::Print */
