@@ -89,7 +89,7 @@ html {
 }
 
 body {
-  background: #333;
+  background: #222;
   color: #777;
 }
 
@@ -826,7 +826,16 @@ input[type="checkbox"]:focus {
   overflow: hidden;
 }
 
+.video-placeholder {
+  display: block;
+  width: 1620px;
+  height: 1080px;
+  margin: 0 auto;
+  background: #888;
+}
+
 .video-controls {
+  position: absolute;
   margin-top: 40px;
   list-style: none;
 }
