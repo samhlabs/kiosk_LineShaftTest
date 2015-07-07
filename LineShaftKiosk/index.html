@@ -43,13 +43,34 @@
 
 </div>
 
+<div class="md-modal md-effect-3" id="modal-3">
+	<div class="md-content">
+		<h3>Whoa a modal</h3>
+		<div>
+			<p>This is a modal window. You can do the following things with it:</p>
+			<ul>
+				<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+				<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+				<li><strong>Close:</strong> click on the button below to close the modal.</li>
+			</ul>
+			<button class="md-close">Close me!</button>
+		</div>
+	</div>
+</div>
+
 <div class="control-center">
 	
 	<a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/startOMX.sh%20&" class="cc-button"><img src="assets/images/ic_play_circle_outline_white_48px.svg" class="icon"/></a>
-	<!-- <a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/startCCOMX.sh%20&" class="cc-button">CC</a>
-	<a href="#" class="cc-button">Modal</a> -->
+
+	<a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/startCCOMX.sh%20&" class="cc-button"><img src="assets/images/ic_closed_caption_white_48px.svg" class="icon"/></a>
+
+
+	<a href="#" class="cc-button md-trigger md-setperspective" data-modal="modal-3">Modal</a>
 
 </div>
+
+		<div class="md-overlay"></div><!-- the overlay element -->
+
 
 
 
@@ -59,7 +80,12 @@
 
 		<!-- TODO: Select version of jquery and link to CDN -->
 		<script src="assets/js/jquery.1.11.3.min.js"></script>
+		<script src="assets/js/classie.min.js"></script>
+		<script src="assets/js/modalEffects.min.js"></script>
+		<script src="assets/js/cssParser.min.js"></script>
+
 		<script src="assets/js/script.min.js"></script>
+
 
 	</body>
 
