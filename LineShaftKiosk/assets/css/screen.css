@@ -1594,7 +1594,7 @@ perspective effects (not including the modals and the overlay).
   height: 1080px;
   margin: 0 150px;
   background: #34363c;
-  background-image:url('../images/orange.jpg');
+  background-image:url('../images/grey-back-01.jpg');
   padding: 250px;
   overflow: hidden;
   z-index: 999;
@@ -1639,7 +1639,7 @@ perspective effects (not including the modals and the overlay).
 .video-controls {
   position: absolute;
   list-style: none;
-  background: #ffd008;
+  background: #666;
   height: 100vh;
   width: 100%;
 }
