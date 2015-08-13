@@ -1047,7 +1047,8 @@ perspective effects (not including the modals and the overlay).
   width: 1770px;
   height: 1080px;
   margin: 0 150px;
-  background: #34363c;
+  background: url("../images/new-layout-proto.jpg");
+  background-size: cover;
   overflow: hidden;
   z-index: 999;
 }
@@ -1064,7 +1065,6 @@ perspective effects (not including the modals and the overlay).
 }
 
 .cc-button:first-child {
-  background: url("../images/topvid.jpg");
   background-size: cover;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1077,7 +1077,6 @@ perspective effects (not including the modals and the overlay).
 }
 
 .cc-button:nth-child(2) {
-  background: #00b6dd;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1089,7 +1088,6 @@ perspective effects (not including the modals and the overlay).
 }
 
 .cc-button:nth-child(3) {
-  background: #f5f0e0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1101,7 +1099,6 @@ perspective effects (not including the modals and the overlay).
 }
 
 .cc-button:nth-child(4) {
-  background: #f5f0e0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1113,7 +1110,6 @@ perspective effects (not including the modals and the overlay).
 }
 
 .cc-button:nth-child(5) {
-  background: #ff7659;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1125,7 +1121,6 @@ perspective effects (not including the modals and the overlay).
 }
 
 .cc-button:nth-child(6) {
-  background: #9e78c0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1137,7 +1132,6 @@ perspective effects (not including the modals and the overlay).
 }
 
 .cc-button:nth-child(7) {
-  background: #00b6dd;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
