@@ -1593,8 +1593,10 @@ perspective effects (not including the modals and the overlay).
   width: 1770px;
   height: 1080px;
   margin: 0 150px;
+  
   background: #34363c;
   background-image:url('../images/grey-with-cogs.jpg');
+  background-size: cover;
   padding: 250px;
   overflow: hidden;
   z-index: 999;
