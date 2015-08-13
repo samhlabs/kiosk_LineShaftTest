@@ -87,9 +87,9 @@ html {
     -webkit-text-size-adjust: 100%;
   }
 }
-
+/* changed background*/
 body {
-  background: #333;
+  background: #ffffff;
   color: #777;
 }
 
@@ -1585,6 +1585,8 @@ perspective effects (not including the modals and the overlay).
   overflow: hidden;
 }
 
+
+/* background change*/
 .control-center {
   position: relative;
   display: block;
@@ -1592,6 +1594,7 @@ perspective effects (not including the modals and the overlay).
   height: 1080px;
   margin: 0 150px;
   background: #34363c;
+  background-image:url('../images/orange.jpg');
   padding: 250px;
   overflow: hidden;
   z-index: 999;
@@ -1632,10 +1635,11 @@ perspective effects (not including the modals and the overlay).
   overflow: hidden;
 }
 
+/* side bar */
 .video-controls {
   position: absolute;
   list-style: none;
-  background: #21252d;
+  background: #ffd008;
   height: 100vh;
   width: 100%;
 }
