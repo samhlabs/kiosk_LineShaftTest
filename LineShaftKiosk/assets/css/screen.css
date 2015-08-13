@@ -89,7 +89,7 @@ a {
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
-  color: #51dfaa;
+  color: #00c59d;
 }
 
 /* ::Import styles */
@@ -1047,7 +1047,7 @@ perspective effects (not including the modals and the overlay).
   width: 1770px;
   height: 1080px;
   margin: 0 150px;
-  background: url("../images/new-layout-proto.jpg");
+  background: #34363c;
   background-size: cover;
   overflow: hidden;
   z-index: 999;
@@ -1065,7 +1065,6 @@ perspective effects (not including the modals and the overlay).
 }
 
 .cc-button:first-child {
-  background-size: cover;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1073,7 +1072,10 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 66.6666667%;
   padding: 0 20px;
-  height: 70%;
+  background: url("../images/factory.jpg") no-repeat;
+  background-size: auto 110%;
+  background-position: 50% 50%;
+  height: 100%;
 }
 
 .cc-button:nth-child(2) {
@@ -1084,10 +1086,16 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 33.3333333%;
   padding: 0 20px;
-  height: 40%;
+  height: 50%;
+  background: #fff;
+  background-image: url("../images/works-kiosk-title.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%;
 }
 
 .cc-button:nth-child(3) {
+  background: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1095,10 +1103,17 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 33.3333333%;
   padding: 0 20px;
-  height: 30%;
+  height: 16.666%;
+}
+.cc-button:nth-child(3) img {
+  background: #00c59d;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: block;
 }
 
 .cc-button:nth-child(4) {
+  background: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1106,10 +1121,17 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 33.3333333%;
   padding: 0 20px;
-  height: 30%;
+  height: 16.666%;
+}
+.cc-button:nth-child(4) img {
+  background: #00c59d;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: block;
 }
 
 .cc-button:nth-child(5) {
+  background: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1117,31 +1139,28 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 33.3333333%;
   padding: 0 20px;
-  height: 30%;
+  height: 16.666%;
+}
+.cc-button:nth-child(5) img {
+  background: #00c59d;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: block;
 }
 
-.cc-button:nth-child(6) {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline;
-  float: left;
-  width: 33.3333333%;
-  padding: 0 20px;
-  height: 30%;
+/*
+.cc-button:nth-child(6){
+	//background:$petty-purple;
+	@include column(4);
+	height:30%;
 }
 
-.cc-button:nth-child(7) {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline;
-  float: left;
-  width: 33.3333333%;
-  padding: 0 20px;
-  height: 30%;
-}
 
+.cc-button:nth-child(7){
+	//background:$betty-blue;
+	@include column(4);
+	height:30%;
+}*/
 .video-controls_wrap {
   overflow: hidden;
 }
