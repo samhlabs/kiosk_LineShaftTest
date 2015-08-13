@@ -1073,7 +1073,7 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 66.6666667%;
   padding: 0 20px;
-  height: 50%;
+  height: 70%;
 }
 
 .cc-button:nth-child(2) {
@@ -1085,11 +1085,11 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 33.3333333%;
   padding: 0 20px;
-  height: 50%;
+  height: 40%;
 }
 
 .cc-button:nth-child(3) {
-  background: #9e78c0;
+  background: #f5f0e0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1097,7 +1097,7 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 33.3333333%;
   padding: 0 20px;
-  height: 50%;
+  height: 30%;
 }
 
 .cc-button:nth-child(4) {
@@ -1109,7 +1109,7 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 33.3333333%;
   padding: 0 20px;
-  height: 50%;
+  height: 30%;
 }
 
 .cc-button:nth-child(5) {
@@ -1121,7 +1121,31 @@ perspective effects (not including the modals and the overlay).
   float: left;
   width: 33.3333333%;
   padding: 0 20px;
-  height: 50%;
+  height: 30%;
+}
+
+.cc-button:nth-child(6) {
+  background: #9e78c0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 33.3333333%;
+  padding: 0 20px;
+  height: 30%;
+}
+
+.cc-button:nth-child(7) {
+  background: #00b6dd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 33.3333333%;
+  padding: 0 20px;
+  height: 30%;
 }
 
 .video-controls_wrap {
