@@ -1595,7 +1595,7 @@ perspective effects (not including the modals and the overlay).
   margin: 0 150px;
   
   background: #34363c;
-  background-image:url('../images/grey-with-cogs.jpg');
+  background-image:url('../images/orange-01.jpg');
   background-size: 1920 1080;
   padding: 250px;
   overflow: hidden;
@@ -1645,8 +1645,8 @@ perspective effects (not including the modals and the overlay).
 .video-controls {
   position: absolute;
   list-style: none;
-  background: #ffd008; 
- /*  background: #0076e7;*/
+ /*  background: #ffd008; */
+  background: #0076e7;
   height: 100vh;
   width: 100%;
 }
