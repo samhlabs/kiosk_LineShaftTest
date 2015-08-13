@@ -1643,7 +1643,8 @@ perspective effects (not including the modals and the overlay).
 .video-controls {
   position: absolute;
   list-style: none;
-  background: #ffd008;
+ /*  background: #ffd008; */
+  background: #0076e7;
   height: 100vh;
   width: 100%;
 }
