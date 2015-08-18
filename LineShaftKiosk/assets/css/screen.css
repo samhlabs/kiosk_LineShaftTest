@@ -80,16 +80,16 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #333;
   color: #777;
 }
 
 a {
-  color: #c64f24;
+  color: #ff7659;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
-  color: #67b2b1;
+  color: #00c59d;
 }
 
 /* ::Import styles */
@@ -103,8 +103,8 @@ a:hover, a:focus, a:active {
 }
 
 p, span, cite, ol, ul, pre, label, input, textarea {
-  font-size: 0.9375em;
-  line-height: 1.4666667em;
+  font-size: 1.25em;
+  line-height: 1.32em;
 }
 
 ul {
@@ -176,43 +176,43 @@ input[type="checkbox"]:focus {
 }
 
 .as-heading__headline, .is-typeset .headline {
+  font-size: 3em;
+  line-height: 1.1em;
+}
+
+.as-heading__largest, .is-typeset h1 {
   font-size: 2.625em;
   line-height: 1.152381em;
 }
 
-.as-heading__largest, .is-typeset h1 {
+.as-heading__large, .is-typeset h2 {
+  font-size: 2.25em;
+  line-height: 1.2222222em;
+}
+
+.as-heading__medium, .is-typeset h3 {
   font-size: 2em;
   line-height: 1.2375em;
 }
 
-.as-heading__large, .is-typeset h2 {
+.as-heading__normal, .is-typeset h4 {
   font-size: 1.75em;
   line-height: 1.2571429em;
 }
 
-.as-heading__medium, .is-typeset h3 {
-  font-size: 1.625em;
-  line-height: 1.1846154em;
-}
-
-.as-heading__normal, .is-typeset h4 {
+.as-heading__small, .is-typeset h5 {
   font-size: 1.5em;
   line-height: 1.2833333em;
 }
 
-.as-heading__small, .is-typeset h5 {
-  font-size: 1.25em;
-  line-height: 1.32em;
-}
-
 .as-heading__smallest, .is-typeset h6 {
-  font-size: 1.125em;
-  line-height: 1.2222222em;
+  font-size: 1.3125em;
+  line-height: 1.2571429em;
 }
 
 .as-blockquote, .as-blockquote--typeset, .is-typeset blockquote {
-  font-size: 2em;
-  line-height: 1.2375em;
+  font-size: 2.625em;
+  line-height: 1.152381em;
   line-height: normal;
 }
 .as-blockquote p, .as-blockquote--typeset p, .is-typeset blockquote p {
@@ -221,44 +221,44 @@ input[type="checkbox"]:focus {
 }
 
 .as-para {
-  font-size: 0.9375em;
-  line-height: 1.4666667em;
+  font-size: 1.25em;
+  line-height: 1.32em;
 }
 
 .as-heading__headline--typeset, .is-typeset .headline {
-  margin: 0 0 0.3142857em 0;
+  margin: 0 0 0.275em 0;
 }
 
 .as-heading__largest--typeset, .is-typeset h1 {
-  margin: 0 0 0.4125em 0;
+  margin: 0 0 0.3142857em 0;
 }
 
 .as-heading__large--typeset, .is-typeset h2 {
-  margin: 0 0 0.4714286em 0;
+  margin: 0 0 0.3666667em 0;
 }
 
 .as-heading__medium--typeset, .is-typeset h3 {
-  margin: 0 0 0.5076923em 0;
+  margin: 0 0 0.4125em 0;
 }
 
 .as-heading__normal--typeset, .is-typeset h4 {
-  margin: 0 0 0.55em 0;
+  margin: 0 0 0.4714286em 0;
 }
 
 .as-heading__small--typeset, .is-typeset h5 {
-  margin: 0 0 0.66em 0;
+  margin: 0 0 0.55em 0;
 }
 
 .as-heading__smallest--typeset, .is-typeset h6 {
-  margin: 0 0 0.7333333em 0;
+  margin: 0 0 0.6285714em 0;
 }
 
 .as-para--typeset, .is-typeset p {
-  margin: 0 0 0.5866667em 0;
+  margin: 0 0 0.44em 0;
 }
 
 .as-list--typeset, .as-unordered-list--typeset, .as-ordered-list--typeset, .is-typeset ol, .is-typeset ul, .is-typeset li {
-  margin: 0 0 0.5866667em 0;
+  margin: 0 0 0.44em 0;
 }
 
 .as-unordered-list--typeset, .as-ordered-list--typeset, .is-typeset ol, .is-typeset ul {
@@ -273,422 +273,911 @@ input[type="checkbox"]:focus {
 }
 
 .as-blockquote--typeset, .is-typeset blockquote {
-  margin: 0.825em 0;
+  margin: 0.6285714em 0;
 }
 
-/* -------------------------------- 
-
-Slider
-
--------------------------------- */
-.cd-hero {
-  position: relative;
-  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.02);
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.02);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.02);
-  background: #f1f1f1;
-  max-width: 1080px;
-}
-
-.cd-hero-slider {
-  position: relative;
-  height: 1080px;
-  overflow: hidden;
-  margin-left: 0;
-}
-.cd-hero-slider li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.cd-hero-slider li.selected {
-  /* this is the visible slide */
-  position: relative;
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-.cd-hero-slider li.move-left {
-  /* slide hidden on the left */
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-.cd-hero-slider li.is-moving, .cd-hero-slider li.selected {
-  /* the is-moving class is assigned to the slide which is moving outside the viewport */
-  -moz-transition: -moz-transform 0.5s;
-  -o-transition: -o-transform 0.5s;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-}
-
-/*.arrows{
-  position:absolute;
-  top:300px;
-  z-index:100;
-}
-
-.arrowl{
-    left:20px;
-}
-
-.arrowr{
-  right:20px;
-}*/
-/* -------------------------------- 
-
-Single slide style
-
--------------------------------- */
-.cd-hero-slider li {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.cd-hero-slider li:first-of-type {
-  background-size: 1920px auto;
-  background-position: 40%;
-}
-.cd-hero-slider li:first-of-type .cd-half-width {
-  max-width: 500px;
-}
-.cd-hero-slider li:first-of-type .cd-half-width p {
-  max-width: 400px;
-}
-.cd-hero-slider li:nth-of-type(2) .cd-half-width {
-  max-width: 540px;
-}
-.cd-hero-slider li:nth-of-type(2) .cd-half-width p {
-  max-width: 400px;
-}
-.cd-hero-slider li:nth-of-type(3) {
-  background-position: 0 80%;
-}
-.cd-hero-slider li:nth-of-type(3) .cd-half-width {
-  max-width: 560px;
-}
-.cd-hero-slider li:nth-of-type(3) .cd-half-width p {
-  max-width: 400px;
-}
-.cd-hero-slider li:nth-of-type(4) {
-  background-size: cover;
-  background-position: 0 50%;
-}
-.cd-hero-slider li:nth-of-type(4) .cd-half-width {
-  max-width: 500px;
-}
-.cd-hero-slider .cd-full-width,
-.cd-hero-slider .cd-half-width {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  /* this padding is used to align the text */
-  /* Force Hardware Acceleration in WebKit */
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.cd-hero-slider .cd-img-container {
-  /* hide image on mobile device */
-  display: none;
-}
-.cd-hero-slider .cd-img-container img {
-  position: absolute;
-}
-.cd-hero-slider .cd-bg-video-wrapper {
-  /* hide video on mobile device */
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+/* General styles for the modal */
+/* 
+Styles for the html/body for special modal where we want 3d effects
+Note that we need a container wrapping all content on the page for the 
+perspective effects (not including the modals and the overlay).
+*/
+.md-perspective,
+.md-perspective body {
   height: 100%;
   overflow: hidden;
 }
-.cd-hero-slider .cd-bg-video-wrapper video {
-  /* you won't see this element in the html, but it will be injected using js */
-  display: block;
+
+.md-perspective body {
+  background: #222;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective: 600px;
+}
+
+.container {
   min-height: 100%;
-  min-width: 100%;
-  max-width: none;
+}
+
+.md-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
   height: auto;
-  width: auto;
-  position: absolute;
-}
-.cd-hero-slider .hero {
-  display: inline;
-}
-.cd-hero-slider p {
-  margin: .5em 0;
-}
-.cd-hero-slider .slide-buttons {
-  display: inline-block;
-}
-.cd-hero-slider .slide-buttons:before {
-  content: '';
-  display: block;
-  height: 2px;
-  max-width: 80px;
-  margin: .5em 0 1.5em 0;
-}
-.cd-hero-slider .cd-full-width,
-.cd-hero-slider .cd-half-width {
-  padding-top: 170px;
-}
-.cd-hero-slider .cd-bg-video-wrapper {
-  display: block;
-}
-.cd-hero-slider .cd-half-width {
-  left: 10%;
-}
-.cd-hero-slider .cd-img-container {
-  display: block;
+  z-index: 2000;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
-/* -------------------------------- 
-
-Single slide animation
-
--------------------------------- */
-.cd-hero-slider .cd-half-width {
-  opacity: 0;
-  -moz-transform: translateX(40px);
-  -ms-transform: translateX(40px);
-  -webkit-transform: translateX(40px);
-  transform: translateX(40px);
-}
-.cd-hero-slider .move-left .cd-half-width {
-  -moz-transform: translateX(-40px);
-  -ms-transform: translateX(-40px);
-  -webkit-transform: translateX(-40px);
-  transform: translateX(-40px);
-}
-.cd-hero-slider .selected .cd-half-width {
-  /* this is the visible slide */
-  opacity: 1;
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-.cd-hero-slider .is-moving .cd-half-width {
-  /* this is the slide moving outside the viewport 
-  wait for the end of the transition on the <li> parent before set opacity to 0 and translate to 40px/-40px */
-  -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
-  -o-transition: opacity 0s 0.5s, -o-transform 0s 0.5s;
-  -webkit-transition: opacity 0s, -webkit-transform 0s;
-  -webkit-transition-delay: 0.5s, 0.5s;
-  transition: opacity 0s 0.5s, transform 0s 0.5s;
-}
-.cd-hero-slider li.selected.from-left .cd-half-width:nth-of-type(2),
-.cd-hero-slider li.selected.from-right .cd-half-width:first-of-type {
-  /* this is the selected slide - different animation if it's entering from left or right */
-  -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
-  -o-transition: opacity 0.4s 0.2s, -o-transform 0.5s 0.2s;
-  -webkit-transition: opacity 0.4s, -webkit-transform 0.5s;
-  -webkit-transition-delay: 0.2s, 0.2s;
-  transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
-}
-.cd-hero-slider li.selected.from-left .cd-half-width:first-of-type,
-.cd-hero-slider li.selected.from-right .cd-half-width:nth-of-type(2) {
-  /* this is the selected slide - different animation if it's entering from left or right */
-  -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s;
-  -o-transition: opacity 0.4s 0.4s, -o-transform 0.5s 0.4s;
-  -webkit-transition: opacity 0.4s, -webkit-transform 0.5s;
-  -webkit-transition-delay: 0.4s, 0.4s;
-  transition: opacity 0.4s 0.4s, transform 0.5s 0.4s;
-}
-.cd-hero-slider .cd-full-width h2,
-.cd-hero-slider .cd-full-width p,
-.cd-hero-slider .cd-full-width .cd-btn {
-  opacity: 0;
-  -moz-transform: translateX(100px);
-  -ms-transform: translateX(100px);
-  -webkit-transform: translateX(100px);
-  transform: translateX(100px);
-}
-.cd-hero-slider .move-left .cd-full-width h2,
-.cd-hero-slider .move-left .cd-full-width p,
-.cd-hero-slider .move-left .cd-full-width .cd-btn {
-  opacity: 0;
-  -moz-transform: translateX(-100px);
-  -ms-transform: translateX(-100px);
-  -webkit-transform: translateX(-100px);
-  transform: translateX(-100px);
-}
-.cd-hero-slider .selected .cd-full-width h2,
-.cd-hero-slider .selected .cd-full-width p,
-.cd-hero-slider .selected .cd-full-width .cd-btn {
-  /* this is the visible slide */
-  opacity: 1;
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-.cd-hero-slider li.is-moving .cd-full-width h2,
-.cd-hero-slider li.is-moving .cd-full-width p,
-.cd-hero-slider li.is-moving .cd-full-width .cd-btn {
-  /* this is the slide moving outside the viewport 
-  wait for the end of the transition on the li parent before set opacity to 0 and translate to 100px/-100px */
-  -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
-  -o-transition: opacity 0s 0.5s, -o-transform 0s 0.5s;
-  -webkit-transition: opacity 0s, -webkit-transform 0s;
-  -webkit-transition-delay: 0.5s, 0.5s;
-  transition: opacity 0s 0.5s, transform 0s 0.5s;
-}
-.cd-hero-slider li.selected h2 {
-  -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
-  -o-transition: opacity 0.4s 0.2s, -o-transform 0.5s 0.2s;
-  -webkit-transition: opacity 0.4s, -webkit-transform 0.5s;
-  -webkit-transition-delay: 0.2s, 0.2s;
-  transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
-}
-.cd-hero-slider li.selected p {
-  -moz-transition: opacity 0.4s 0.3s, -moz-transform 0.5s 0.3s;
-  -o-transition: opacity 0.4s 0.3s, -o-transform 0.5s 0.3s;
-  -webkit-transition: opacity 0.4s, -webkit-transform 0.5s;
-  -webkit-transition-delay: 0.3s, 0.3s;
-  transition: opacity 0.4s 0.3s, transform 0.5s 0.3s;
-}
-.cd-hero-slider li.selected .cd-btn {
-  -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s, background-color 0.2s 0s;
-  -o-transition: opacity 0.4s 0.4s, -o-transform 0.5s 0.4s, background-color 0.2s 0s;
-  -webkit-transition: opacity 0.4s, -webkit-transform 0.5s, background-color 0.2s;
-  -webkit-transition-delay: 0.4s, 0.4s, 0s;
-  transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, background-color 0.2s 0s;
+.md-show {
+  visibility: visible;
 }
 
-/* -------------------------------- 
-
-Slider navigation
-
--------------------------------- */
-.cd-slider-nav {
-  position: absolute;
+.md-overlay {
+  position: fixed;
   width: 100%;
-  bottom: 0;
-  z-index: 2;
-  text-align: center;
-  height: 60px;
-  background-color: rgba(223, 223, 223, 0.3);
-}
-.cd-slider-nav nav, .cd-slider-nav ul, .cd-slider-nav li, .cd-slider-nav a {
   height: 100%;
-}
-.cd-slider-nav nav {
-  display: inline-block;
-  position: relative;
-}
-.cd-slider-nav .cd-marker {
-  position: absolute;
-  bottom: 0;
+  visibility: hidden;
+  top: 0;
   left: 0;
-  width: 150px;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(50, 50, 50, 0.7);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+  color: #fff;
+  background: #ff7659;
+  position: relative;
+  margin: 0 auto;
+}
+
+.md-content h3 {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 300;
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px 3px 0 0;
+}
+
+.md-content > div {
+  padding: 15px 40px 30px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+.md-content > div p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.md-content > div ul {
+  margin: 0;
+  padding: 0 0 30px 20px;
+}
+
+.md-content > div ul li {
+  padding: 5px 0;
+}
+
+.md-content button {
+  display: block;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+/* Individual modal styles with animations/transitions */
+/* Effect 1: Fade in and scale up */
+.md-effect-1 .md-content {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .md-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Effect 2: Slide from the right */
+.md-effect-2 .md-content {
+  -webkit-transform: translateX(20%);
+  -moz-transform: translateX(20%);
+  -ms-transform: translateX(20%);
+  transform: translateX(20%);
+  opacity: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  -moz-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+.md-show.md-effect-2 .md-content {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Effect 3: Slide from the bottom */
+.md-effect-3 .md-content {
+  -webkit-transform: translateY(20%);
+  -moz-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-3 .md-content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Effect 4: Newspaper */
+.md-effect-4 .md-content {
+  -webkit-transform: scale(0) rotate(720deg);
+  -moz-transform: scale(0) rotate(720deg);
+  -ms-transform: scale(0) rotate(720deg);
+  transform: scale(0) rotate(720deg);
+  opacity: 0;
+}
+
+.md-show.md-effect-4 ~ .md-overlay,
+.md-effect-4 .md-content {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.md-show.md-effect-4 .md-content {
+  -webkit-transform: scale(1) rotate(0deg);
+  -moz-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+/* Effect 5: fall */
+.md-effect-5.md-modal {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+
+.md-effect-5 .md-content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(600px) rotateX(20deg);
+  -moz-transform: translateZ(600px) rotateX(20deg);
+  -ms-transform: translateZ(600px) rotateX(20deg);
+  transform: translateZ(600px) rotateX(20deg);
+  opacity: 0;
+}
+
+.md-show.md-effect-5 .md-content {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transform: translateZ(0px) rotateX(0deg);
+  -moz-transform: translateZ(0px) rotateX(0deg);
+  -ms-transform: translateZ(0px) rotateX(0deg);
+  transform: translateZ(0px) rotateX(0deg);
+  opacity: 1;
+}
+
+/* Effect 6: side fall */
+.md-effect-6.md-modal {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+
+.md-effect-6 .md-content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translate(30%) translateZ(600px) rotate(10deg);
+  -moz-transform: translate(30%) translateZ(600px) rotate(10deg);
+  -ms-transform: translate(30%) translateZ(600px) rotate(10deg);
+  transform: translate(30%) translateZ(600px) rotate(10deg);
+  opacity: 0;
+}
+
+.md-show.md-effect-6 .md-content {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transform: translate(0%) translateZ(0) rotate(0deg);
+  -moz-transform: translate(0%) translateZ(0) rotate(0deg);
+  -ms-transform: translate(0%) translateZ(0) rotate(0deg);
+  transform: translate(0%) translateZ(0) rotate(0deg);
+  opacity: 1;
+}
+
+/* Effect 7:  slide and stick to top */
+.md-effect-7 {
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.md-effect-7 .md-content {
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  opacity: 0;
+}
+
+.md-show.md-effect-7 .md-content {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  border-radius: 0 0 3px 3px;
+  opacity: 1;
+}
+
+/* Effect 8: 3D flip horizontal */
+.md-effect-8.md-modal {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+
+.md-effect-8 .md-content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(-70deg);
+  -moz-transform: rotateY(-70deg);
+  -ms-transform: rotateY(-70deg);
+  transform: rotateY(-70deg);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.md-show.md-effect-8 .md-content {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+/* Effect 9: 3D flip vertical */
+.md-effect-9.md-modal {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+
+.md-effect-9 .md-content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(-70deg);
+  -moz-transform: rotateX(-70deg);
+  -ms-transform: rotateX(-70deg);
+  transform: rotateX(-70deg);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.md-show.md-effect-9 .md-content {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+/* Effect 10: 3D sign */
+.md-effect-10.md-modal {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+
+.md-effect-10 .md-content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(-60deg);
+  -moz-transform: rotateX(-60deg);
+  -ms-transform: rotateX(-60deg);
+  transform: rotateX(-60deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-10 .md-content {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+/* Effect 11: Super scaled */
+.md-effect-11 .md-content {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-11 .md-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Effect 12:  Just me */
+.md-effect-12 .md-content {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-12 ~ .md-overlay {
+  background: #e74c3c;
+}
+
+.md-effect-12 .md-content h3,
+.md-effect-12 .md-content {
+  background: transparent;
+}
+
+.md-show.md-effect-12 .md-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Effect 13: 3D slit */
+.md-effect-13.md-modal {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+
+.md-effect-13 .md-content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-3000px) rotateY(90deg);
+  -moz-transform: translateZ(-3000px) rotateY(90deg);
+  -ms-transform: translateZ(-3000px) rotateY(90deg);
+  transform: translateZ(-3000px) rotateY(90deg);
+  opacity: 0;
+}
+
+.md-show.md-effect-13 .md-content {
+  -webkit-animation: slit .7s forwards ease-out;
+  -moz-animation: slit .7s forwards ease-out;
+  animation: slit .7s forwards ease-out;
+}
+
+@-webkit-keyframes slit {
+  50% {
+    -webkit-transform: translateZ(-250px) rotateY(89deg);
+    opacity: .5;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slit {
+  50% {
+    -moz-transform: translateZ(-250px) rotateY(89deg);
+    opacity: .5;
+    -moz-animation-timing-function: ease-out;
+  }
+  100% {
+    -moz-transform: translateZ(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes slit {
+  50% {
+    transform: translateZ(-250px) rotateY(89deg);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateZ(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+/* Effect 14:  3D Rotate from bottom */
+.md-effect-14.md-modal {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+
+.md-effect-14 .md-content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateY(100%) rotateX(90deg);
+  -moz-transform: translateY(100%) rotateX(90deg);
+  -ms-transform: translateY(100%) rotateX(90deg);
+  transform: translateY(100%) rotateX(90deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.md-show.md-effect-14 .md-content {
+  -webkit-transform: translateY(0%) rotateX(0deg);
+  -moz-transform: translateY(0%) rotateX(0deg);
+  -ms-transform: translateY(0%) rotateX(0deg);
+  transform: translateY(0%) rotateX(0deg);
+  opacity: 1;
+}
+
+/* Effect 15:  3D Rotate in from left */
+.md-effect-15.md-modal {
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+
+.md-effect-15 .md-content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+  -moz-transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+  -ms-transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+  transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-15 .md-content {
+  -webkit-transform: translateZ(0px) translateX(0%) rotateY(0deg);
+  -moz-transform: translateZ(0px) translateX(0%) rotateY(0deg);
+  -ms-transform: translateZ(0px) translateX(0%) rotateY(0deg);
+  transform: translateZ(0px) translateX(0%) rotateY(0deg);
+  opacity: 1;
+}
+
+/* Effect 16:  Blur */
+.md-show.md-effect-16 ~ .md-overlay {
+  background: rgba(180, 46, 32, 0.5);
+}
+
+.md-show.md-effect-16 ~ .container {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.md-effect-16 .md-content {
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  transform: translateY(-5%);
+  opacity: 0;
+}
+
+.md-show.md-effect-16 ~ .container,
+.md-effect-16 .md-content {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-16 .md-content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Effect 17:  Slide in from bottom with perspective on container */
+.md-show.md-effect-17 ~ .container {
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: inset 0 4px 0 #999;
-  -moz-transition: -moz-transform 0.2s, box-shadow 0.2s;
-  -o-transition: -o-transform 0.2s, box-shadow 0.2s;
-  -webkit-transition: -webkit-transform 0.2s, box-shadow 0.2s;
-  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
 }
-.cd-slider-nav .cd-marker.item-2 {
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+
+.md-show.md-effect-17 ~ .container,
+.md-show.md-effect-17 ~ .md-overlay {
+  -webkit-transform: rotateX(-2deg);
+  -moz-transform: rotateX(-2deg);
+  -ms-transform: rotateX(-2deg);
+  transform: rotateX(-2deg);
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-.cd-slider-nav .cd-marker.item-3 {
+
+.md-effect-17 .md-content {
+  opacity: 0;
+  -webkit-transform: translateY(200%);
+  -moz-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  transform: translateY(200%);
+}
+
+.md-show.md-effect-17 .md-content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: all 0.3s 0.2s;
+  -moz-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+}
+
+/* Effect 18:  Slide from right with perspective on container */
+.md-show.md-effect-18 ~ .container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.md-show.md-effect-18 ~ .md-overlay {
+  background: rgba(143, 27, 15, 0.8);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.md-show.md-effect-18 ~ .container,
+.md-show.md-effect-18 ~ .md-overlay {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  -webkit-animation: rotateRightSideFirst 0.5s forwards ease-in;
+  -moz-transform-style: preserve-3d;
+  -moz-transform-origin: 0% 50%;
+  -moz-animation: rotateRightSideFirst 0.5s forwards ease-in;
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  animation: rotateRightSideFirst 0.5s forwards ease-in;
+}
+
+@-webkit-keyframes rotateRightSideFirst {
+  50% {
+    -webkit-transform: translateZ(-50px) rotateY(5deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateZ(-200px);
+  }
+}
+@-moz-keyframes rotateRightSideFirst {
+  50% {
+    -moz-transform: translateZ(-50px) rotateY(5deg);
+    -moz-animation-timing-function: ease-out;
+  }
+  100% {
+    -moz-transform: translateZ(-200px);
+  }
+}
+@keyframes rotateRightSideFirst {
+  50% {
+    transform: translateZ(-50px) rotateY(5deg);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateZ(-200px);
+  }
+}
+.md-effect-18 .md-content {
+  -webkit-transform: translateX(200%);
   -moz-transform: translateX(200%);
   -ms-transform: translateX(200%);
-  -webkit-transform: translateX(200%);
   transform: translateX(200%);
+  opacity: 0;
 }
-.cd-slider-nav .cd-marker.item-4 {
-  -moz-transform: translateX(300%);
-  -ms-transform: translateX(300%);
-  -webkit-transform: translateX(300%);
-  transform: translateX(300%);
+
+.md-show.md-effect-18 .md-content {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+  -webkit-transition: all 0.5s 0.1s;
+  -moz-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
 }
-.cd-slider-nav .cd-marker.item-5 {
-  -moz-transform: translateX(400%);
-  -ms-transform: translateX(400%);
-  -webkit-transform: translateX(400%);
-  transform: translateX(400%);
-}
-.cd-slider-nav ul {
+
+/* Effect 19:  Slip in from the top with perspective on container */
+.md-show.md-effect-19 ~ .container {
+  height: 100%;
   overflow: hidden;
-  *zoom: 1;
+}
+
+.md-show.md-effect-19 ~ .md-overlay {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.md-show.md-effect-19 ~ .container,
+.md-show.md-effect-19 ~ .md-overlay {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 100%;
+  -webkit-animation: OpenTop 0.5s forwards ease-in;
+  -moz-transform-style: preserve-3d;
+  -moz-transform-origin: 50% 100%;
+  -moz-animation: OpenTop 0.5s forwards ease-in;
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  animation: OpenTop 0.5s forwards ease-in;
+}
+
+@-webkit-keyframes OpenTop {
+  50% {
+    -webkit-transform: rotateX(10deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+@-moz-keyframes OpenTop {
+  50% {
+    -moz-transform: rotateX(10deg);
+    -moz-animation-timing-function: ease-out;
+  }
+}
+@keyframes OpenTop {
+  50% {
+    transform: rotateX(10deg);
+    animation-timing-function: ease-out;
+  }
+}
+.md-effect-19 .md-content {
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+  opacity: 0;
+}
+
+.md-show.md-effect-19 .md-content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: all 0.5s 0.1s;
+  -moz-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
+}
+
+@media screen and (max-width: 32em) {
+  body {
+    font-size: 75%;
+  }
+}
+.site-content {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.control-center {
+  position: relative;
+  display: block;
+  width: 1770px;
+  height: 1080px;
+  margin: 0 150px;
+  background: #34363c;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.cc-button {
+  padding: 125px;
+  color: #fff;
   margin: 0;
 }
-.cd-slider-nav li {
-  display: inline-block;
+.cc-button .icon {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.cc-button:first-child {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
   float: left;
-}
-.no-touch .cd-slider-nav li.selected a:hover {
-  background-color: transparent;
-}
-.cd-slider-nav a {
-  display: block;
-  position: relative;
-  font-size: 1rem;
-  -moz-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-  /*&::before {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 8px;
-    @include center(x);
-    //background: url(../assets/cd-icon-navigation.svg) no-repeat 0 0;
-  }*/
-}
-.no-touch .cd-slider-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-.cd-slider-nav .cd-marker,
-.cd-slider-nav li {
-  width: 50px;
-  background-color: rgba(197, 197, 197, 0.3);
-}
-.cd-slider-nav a {
-  font-weight: 500;
-  padding: 1em 0;
+  width: 66.6666667%;
+  padding: 0 20px;
+  background: url("../images/factory.jpg") no-repeat;
+  background-size: auto 110%;
+  background-position: 50% 50%;
+  height: 100%;
 }
 
-/* -------------------------------- 
-
-Javascript disabled
-
--------------------------------- */
-.no-js .cd-hero-slider li {
-  display: none;
+.cc-button:nth-child(2) {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 33.3333333%;
+  padding: 0 20px;
+  height: 50%;
+  background: #fff;
+  background-image: url("../images/works-kiosk-title.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 50%;
 }
-.no-js .cd-hero-slider li.selected {
+
+.cc-button:nth-child(3) {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 33.3333333%;
+  padding: 0 20px;
+  height: 16.666%;
+}
+.cc-button:nth-child(3) img {
+  background: #00c59d;
+  margin: 0 auto;
+  padding: 20px 40px;
   display: block;
 }
 
-.no-js .cd-slider-nav {
-  display: none;
+.cc-button:nth-child(4) {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 33.3333333%;
+  padding: 0 20px;
+  height: 16.666%;
+}
+.cc-button:nth-child(4) img {
+  background: #00c59d;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: block;
+}
+
+.cc-button:nth-child(5) {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 33.3333333%;
+  padding: 0 20px;
+  height: 16.666%;
+}
+.cc-button:nth-child(5) img {
+  background: #00c59d;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: block;
+}
+
+/*
+.cc-button:nth-child(6){
+	//background:$petty-purple;
+	@include column(4);
+	height:30%;
+}
+
+
+.cc-button:nth-child(7){
+	//background:$betty-blue;
+	@include column(4);
+	height:30%;
+}*/
+.video-controls_wrap {
+  overflow: hidden;
+}
+
+.video-controls {
+  position: absolute;
+  list-style: none;
+  background: #21252d;
+  height: 100vh;
+  width: 100%;
+}
+.video-controls li {
+  display: block;
+}
+.video-controls li a {
+  display: inline-block;
+  padding: 40px 50px;
 }
 
 /* ::Print */

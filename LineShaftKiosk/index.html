@@ -7,14 +7,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="initial-scale=1">
 
-		<title>Sassaparilla: Fiennes Edition</title>
-		<link href="/assets/css/screen.min.css" rel="stylesheet" type="text/css" media="all"/>
+		<title>The Works Kiosk</title>
+		<link href="assets/css/screen.min.css" rel="stylesheet" type="text/css" media="all"/>
 				
-		<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+		<!-- <link rel="shortcut icon" type="image/ico" href="favicon.ico" /> -->
 		<!-- TODO: Download a custom build of modernizer to suit the project -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+		<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 	</head>
 
-	<body>
+	<body data-hijacking="off" data-animation="scaleDown">
 
 		
 
@@ -22,110 +24,74 @@
 			
 
 
+<div class="video-controls_wrap">
 
+	<ul class="video-controls">
+		<li><a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/startOMX.sh%20&">
+		<img src="assets/images/ic_play_circle_outline_white_48px.svg" class="icon"/>
+		</a></li>
 
-<div class="cd-hero">
+        <li>
+        <!-- <a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/startCCOMX.sh%20&">-->
+        <a href="file:///homepage.html?kbd=s"></a>
+        <img src="assets/images/ic_closed_caption_white_48px.svg" class="icon"/></a></li>
 
-	<ul class="cd-hero-slider is-typeset">
+        <li><a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/stopOMX.sh%202>/dev/null%20&"><img src="assets/images/ic_stop_white_48px.svg" class="icon"/></a></li>
+        <li><a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/volumeUp.sh"><img src="assets/images/ic_volume_up_white_48px.svg" class="icon"/></a></li>
+        <li><a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/volumeDown.sh"><img src="assets/images/ic_volume_off_white_48px.svg" class="icon"/></a></li>
+        <li><a href="file:///homepage.html?kbd=r"><img src="assets/images/ic_replay_white_48px.svg" class="icon"/></a></li>
+        <li><a href="file:///homepage.html?kbd=q"><img src="assets/images/ic_loop_white_48px.svg" class="icon"/></a></li>
+    </ul>
 
-		<li class="selected">
-			<div class="cd-half-width">
+</div>
 
-				<div class="slide-buttons">	
-		
-				</div>	
-
-			</div> <!-- .cd-full-width -->
-		</li>
-
-
-		<li class="selected">
-			<div class="cd-half-width">
-
-				<div class="slide-buttons">	
-
-				</div>	
-
-			</div> <!-- .cd-full-width -->
-		</li>
-
-		<li>
-			<div class="cd-half-width">
-
-				<div class="slide-buttons">	
-
-				</div>	
-
-			</div> <!-- .cd-full-width -->
-		</li>
-
-		<li>
-			<div class="cd-half-width">
-
-				<div class="slide-buttons">	
-
-				</div> 
-
-			</div> <!-- .cd-full-width -->
-		</li>
-
-		<li>
-			<div class="cd-half-width">
-
-				<div class="slide-buttons">	
-
-				</div> 
-
-			</div> <!-- .cd-full-width -->
-		</li>
-
-		<li>
-			<div class="cd-half-width">
-
-				<div class="slide-buttons">	
-	
-				</div> 
-
-			</div> <!-- .cd-full-width -->
-		</li>
-
-		<li>
-			<div class="cd-half-width">
-
-				<div class="slide-buttons">	
-	
-				</div>	
-
-			</div> <!-- .cd-full-width -->
-		</li>
-		
-	</ul> <!-- .cd-hero-slider -->
-
-	<div class="cd-slider-nav">
-		<nav>
-			<span class="cd-marker item-1"></span>
-			
+<div class="md-modal md-effect-3" id="modal-3">
+	<div class="md-content">
+		<h3>Whoa a modal</h3>
+		<div>
+			<p>This is a modal window. You can do the following things with it:</p>
 			<ul>
-				<li class="selected"><a href="#0"> </a></li>
-				<li><a href="#0"> </a></li>
-				<li><a href="#0"> </a></li>
-				<li><a href="#0"> </a></li>
-				<li><a href="#0"> </a></li>
+				<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+				<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+				<li><strong>Close:</strong> click on the button below to close the modal.</li>
 			</ul>
-		</nav> 
-	</div> <!-- .cd-slider-nav -->
+			<button class="md-close">Close me!</button>
+		</div>
+	</div>
+</div>
 
-</div> <!-- .cd-hero -->
+<div class="control-center">
+	
+	<a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/startOMX.sh%20&" class="cc-button"><img src="assets/images/ic_play_circle_outline_white_48px.svg" class="icon"/></a>
+
+	<a href="file:///homepage.html?cmd=/media/PiShare/Git/kiosk_LineShaft/startOMX.sh%20&" class="cc-button"><img src="assets/images/ic_closed_caption_white_48px.svg" class="icon"/></a>
+
+	<a href="#" class="cc-button md-trigger md-setperspective" data-modal="modal-3"><img src="assets/images/works-kiosk-modal-button.png"/></a>
+
+	<a href="#" class="cc-button md-trigger md-setperspective" data-modal="modal-3"><img src="assets/images/works-kiosk-modal-button.png"/></a>
+
+	<a href="#" class="cc-button md-trigger md-setperspective" data-modal="modal-3"><img src="assets/images/works-kiosk-modal-button.png"/></a>
+
+
+</div>
+
+		<div class="md-overlay"></div><!-- the overlay element -->
+
+
+
 
 		</div>	
 
 			
 
 		<!-- TODO: Select version of jquery and link to CDN -->
-		<script src="/assets/js/modernizr.min.js"></script>
-		<script src="/assets/js/jquery.1.11.3.min.js"></script>
-		<script src="/assets/js/script.min.js"></script>
-		<script src="/assets/js/slider.min.js"></script>
+		<script src="assets/js/jquery.1.11.3.min.js"></script>
+		<script src="assets/js/classie.min.js"></script>
+		<script src="assets/js/modalEffects.min.js"></script>
+		<script src="assets/js/cssParser.min.js"></script>
+
+		<script src="assets/js/script.min.js"></script>
+
 
 	</body>
 
