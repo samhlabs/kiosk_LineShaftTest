@@ -337,6 +337,15 @@ input[type="checkbox"]:focus {
   margin: 0 auto;
   height: 150px;
   width: 150px;
+  -moz-transition: all 0.15s cubic-bezier(0.16, 0.68, 0.43, 0.99) 0s;
+  -o-transition: all 0.15s cubic-bezier(0.16, 0.68, 0.43, 0.99) 0s;
+  -webkit-transition: all 0.15s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  -webkit-transition-delay: 0s;
+  transition: all 0.15s cubic-bezier(0.16, 0.68, 0.43, 0.99) 0s;
+}
+.video-preview_play:active img {
+  height: 190px;
+  width: 190px;
 }
 
 .bg {
