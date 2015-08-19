@@ -70,3 +70,9 @@ jQuery(document).ready(function($)
 	}	
 		
 });
+
+$(function() {
+    FastClick.attach(document.body);
+});
+
+document.body.style.cursor = 'none';

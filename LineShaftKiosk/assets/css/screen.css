@@ -288,6 +288,10 @@ input[type="checkbox"]:focus {
   padding: 0 0;
 }
 
+.hidden {
+  opacity: .1;
+}
+
 .video-controls_wrap {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -331,8 +335,15 @@ input[type="checkbox"]:focus {
 .video-preview_play img {
   display: block;
   margin: 0 auto;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
+}
+
+.bg {
+  background-image: url(../images/factory.jpg);
+  background-size: auto 110%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .video-info {
@@ -343,6 +354,10 @@ input[type="checkbox"]:focus {
   float: left;
   width: 33.3333333%;
   padding: 0 20px;
+  -moz-box-shadow: inset 6px 0px 20px -5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 6px 0px 20px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 6px 0px 20px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
   height: 100vh;
   display: table;
 }
