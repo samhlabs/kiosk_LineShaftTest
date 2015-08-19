@@ -11,4 +11,4 @@ sleep .1 #breath... give that damn processor a break already
 #i think this is the same as above, just exhausting options
 
 sleep 1.5 #dev delay - just testing.
-omxplayer -o local --win '150 0 1920 1080' /media/PiShare/lineshaft_1300x900.mov --subtitles /media/PiShare/lineshaft_1300x900.scc #launch the video // TO DO: replace this with variables for video and window size, or make easily replacable
+omxplayer -o local --win '150 0 1920 1080' /media/PiShare/lineshaft_1300x900.mov #launch the video // TO DO: replace this with variables for video and window size, or make easily replacable
