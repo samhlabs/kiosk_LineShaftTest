@@ -84,3 +84,8 @@ $(window.document).on('mouseup touchend', function(event) {
   // Capture this event anywhere in the document, since the mouse may leave our element while mouse is down and then the 'up' event will not fire within the element.
   mouseDown = false;
 });
+
+$(document).ready(function(){
+	$("wrapper").css('cursor','url(assets/images/ic_panorama_fish_eye_white_24dp_2x.png),auto');
+	$("a").css('cursor','url(assets/images/ic_panorama_fish_eye_white_24dp_2x.png),auto');
+});
