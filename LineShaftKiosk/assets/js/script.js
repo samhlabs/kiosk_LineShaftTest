@@ -76,3 +76,6 @@ $(function() {
 });
 
 document.body.style.cursor = 'none';
+
+
+$$('span', 'p', 'a');
