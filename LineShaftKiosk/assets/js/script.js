@@ -79,3 +79,8 @@ document.body.style.cursor = 'none';
 
 
 $$('span', 'p', 'a');
+
+$(window.document).on('mouseup touchend', function(event) {
+  // Capture this event anywhere in the document, since the mouse may leave our element while mouse is down and then the 'up' event will not fire within the element.
+  mouseDown = false;
+});

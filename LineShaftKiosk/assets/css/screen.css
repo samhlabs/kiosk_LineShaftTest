@@ -92,6 +92,10 @@ a:hover, a:focus, a:active {
   color: #67b2b1;
 }
 
+img {
+  pointer-events: none;
+}
+
 /* ::Import styles */
 /* ------------------------------------------------------------ */
 .font-body, body {
@@ -298,7 +302,7 @@ input[type="checkbox"]:focus {
   box-sizing: border-box;
   display: inline;
   float: left;
-  width: 8.3333333%;
+  width: 5%;
   padding: 0 20px;
   height: 100vh;
   background: #222;
@@ -352,7 +356,7 @@ input[type="checkbox"]:focus {
   box-sizing: border-box;
   display: inline;
   float: left;
-  width: 33.3333333%;
+  width: 36.6666667%;
   padding: 0 20px;
   -moz-box-shadow: inset 6px 0px 20px -5px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 6px 0px 20px -5px rgba(0, 0, 0, 0.4);
@@ -363,7 +367,7 @@ input[type="checkbox"]:focus {
 }
 .video-info .title {
   display: block;
-  height: 630px;
+  min-height: 630px;
   background-image: url(../images/works-kiosk-ui-factories.png);
   background-size: auto 100%;
   background-position: 50% 50%;
