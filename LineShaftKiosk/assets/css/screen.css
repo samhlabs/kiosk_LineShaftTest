@@ -328,24 +328,15 @@ input[type="checkbox"]:focus {
   display: table;
 }
 
-.video-preview_play {
+.play {
   display: table-cell;
   vertical-align: middle;
 }
-.video-preview_play img {
+.play img {
   display: block;
   margin: 0 auto;
   height: 150px;
   width: 150px;
-  -moz-transition: all 0.15s cubic-bezier(0.16, 0.68, 0.43, 0.99) 0s;
-  -o-transition: all 0.15s cubic-bezier(0.16, 0.68, 0.43, 0.99) 0s;
-  -webkit-transition: all 0.15s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  -webkit-transition-delay: 0s;
-  transition: all 0.15s cubic-bezier(0.16, 0.68, 0.43, 0.99) 0s;
-}
-.video-preview_play:active img {
-  height: 190px;
-  width: 190px;
 }
 
 .bg {
@@ -369,6 +360,14 @@ input[type="checkbox"]:focus {
   position: relative;
   height: 100vh;
   display: table;
+}
+.video-info .title {
+  display: block;
+  height: 630px;
+  background-image: url(../images/works-kiosk-ui-factories.png);
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 /* ::Print */
