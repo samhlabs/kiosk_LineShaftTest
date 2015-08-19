@@ -305,7 +305,7 @@ input[type="checkbox"]:focus {
   width: 5%;
   padding: 0 20px;
   height: 100vh;
-  background: #222;
+  background: #111;
   display: table;
 }
 
@@ -316,7 +316,7 @@ input[type="checkbox"]:focus {
 .video-controls .icon {
   display: block;
   margin: 0 auto;
-  padding: 35px 0;
+  padding: 40px 0;
 }
 
 .video-preview {
@@ -358,9 +358,9 @@ input[type="checkbox"]:focus {
   float: left;
   width: 36.6666667%;
   padding: 0 20px;
-  -moz-box-shadow: inset 6px 0px 20px -5px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 6px 0px 20px -5px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 6px 0px 20px -5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 6px 0px 20px -4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 6px 0px 20px -4px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 6px 0px 20px -4px rgba(0, 0, 0, 0.4);
   position: relative;
   height: 100vh;
   display: table;
