@@ -256,14 +256,14 @@ input[type="checkbox"]:focus {
   white-space: nowrap;
   background: #00c59d;
   text-transform: uppercase;
-  -moz-box-shadow: 0px 5px 10px 3px rgba(100, 100, 100, 0.05);
-  -webkit-box-shadow: 0px 5px 10px 3px rgba(100, 100, 100, 0.05);
-  box-shadow: 0px 5px 10px 3px rgba(100, 100, 100, 0.05);
   -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
   -o-transition: color 0.2s 0.3s, width 0.3s 0s;
   -webkit-transition: color 0.2s, width 0.3s;
   -webkit-transition-delay: 0.3s, 0s;
   transition: color 0.2s 0.3s, width 0.3s 0s;
+}
+.cd-modal-action .btn:first-child {
+  padding-top: 0;
 }
 .cd-modal-action .btn.to-circle {
   width: 4em;
@@ -283,12 +283,12 @@ input[type="checkbox"]:focus {
   border-radius: 50%;
   opacity: 0;
   visibility: hidden;
-  border: 10px solid #00c59d;
-  -moz-transition: visibility 0s 0.2s;
-  -o-transition: visibility 0s 0.2s;
+  border: 5px solid #00c59d;
+  -moz-transition: visibility 0s 0.1s;
+  -o-transition: visibility 0s 0.1s;
   -webkit-transition: visibility 0s;
-  -webkit-transition-delay: 0.2s;
-  transition: visibility 0s 0.2s;
+  -webkit-transition-delay: 0.1s;
+  transition: visibility 0s 0.1s;
 }
 .cd-modal-action .cd-modal-bg.is-visible {
   opacity: 1;
@@ -519,19 +519,19 @@ input[type="checkbox"]:focus {
 }
 .video-info .title {
   display: block;
-  min-height: 630px;
+  height: 600px;
   background-image: url(../images/works-kiosk-ui-factories.png);
-  background-size: auto 100%;
+  background-size: 115% auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 .video-info .modal-buttons {
   display: block;
-  min-height: 450px;
+  min-height: 480px;
 }
 .video-info .info-play {
   display: block;
-  height: 630px;
+  height: 600px;
   width: 100%;
 }
 
