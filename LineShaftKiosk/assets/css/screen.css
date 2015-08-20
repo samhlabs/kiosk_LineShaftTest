@@ -92,10 +92,6 @@ a:hover, a:focus, a:active {
   color: #67b2b1;
 }
 
-img {
-  pointer-events: none;
-}
-
 /* ::Import styles */
 /* ------------------------------------------------------------ */
 .font-body, body {
