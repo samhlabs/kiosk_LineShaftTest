@@ -205,7 +205,7 @@ input[type="checkbox"]:focus {
   height: 60px;
   pointer-events: none;
   background: transparent;
-  background: #f1f1f1;
+  background: #444;
 }
 .cd-modal .cd-modal-content {
   height: 100%;
@@ -243,7 +243,7 @@ input[type="checkbox"]:focus {
 .cd-modal-action .btn, .cd-modal-action .cd-modal-bg {
   display: inline-block;
   height: 4em;
-  background-color: #888;
+  background-color: #444;
 }
 .cd-modal-action .btn {
   width: 12.5em;
@@ -256,6 +256,9 @@ input[type="checkbox"]:focus {
   white-space: nowrap;
   background: #00c59d;
   text-transform: uppercase;
+  -moz-box-shadow: 0px 5px 10px 3px rgba(100, 100, 100, 0.05);
+  -webkit-box-shadow: 0px 5px 10px 3px rgba(100, 100, 100, 0.05);
+  box-shadow: 0px 5px 10px 3px rgba(100, 100, 100, 0.05);
   -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
   -o-transition: color 0.2s 0.3s, width 0.3s 0s;
   -webkit-transition: color 0.2s, width 0.3s;
@@ -280,11 +283,12 @@ input[type="checkbox"]:focus {
   border-radius: 50%;
   opacity: 0;
   visibility: hidden;
-  -moz-transition: visibility 0s 0.5s;
-  -o-transition: visibility 0s 0.5s;
+  border: 10px solid #00c59d;
+  -moz-transition: visibility 0s 0.2s;
+  -o-transition: visibility 0s 0.2s;
   -webkit-transition: visibility 0s;
-  -webkit-transition-delay: 0.5s;
-  transition: visibility 0s 0.5s;
+  -webkit-transition-delay: 0.2s;
+  transition: visibility 0s 0.2s;
 }
 .cd-modal-action .cd-modal-bg.is-visible {
   opacity: 1;
