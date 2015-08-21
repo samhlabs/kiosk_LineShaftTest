@@ -319,14 +319,22 @@ input[type="checkbox"]:focus {
   width: 36.6666667%;
   padding: 0 20px;
   float: right;
-  padding: 60px;
+  padding: 60px 80px;
   text-align: left;
   overflow-y: auto;
-  color: #fff;
-  background: #444;
+  background: #fff;
+  opacity: .9;
+  border-left: 20px solid #00c59d;
+}
+.cd-modal h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 4em;
+  margin-bottom: 0;
+  font-style: italic;
 }
 .cd-modal p {
-  margin: 2em 0;
+  margin-top: .5em;
   font-size: 1.8rem;
   line-height: 2;
   font-weight: 100;
@@ -407,11 +415,11 @@ input[type="checkbox"]:focus {
   position: fixed;
   z-index: 999;
   top: 20px;
-  right: 5%;
+  right: 20px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5) url(../images/cd-icon-close.svg) no-repeat center center;
+  background: rgba(0, 197, 157, 0.5) url(../images/cd-icon-close.svg) no-repeat center center;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
