@@ -48,7 +48,7 @@ jQuery(document).ready(function($){
 	}
 
 	function animateLayer(layer, scaleVal, bool) {
-		layer.velocity({ scale: scaleVal }, 400, function(){
+		layer.velocity({ scale: scaleVal }, 10, function(){
 			$('body').toggleClass('overflow-hidden', bool);
 			(bool) 
 				? layer.parents('.cd-section').addClass('modal-is-visible').end().off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend')
@@ -56,7 +56,7 @@ jQuery(document).ready(function($){
 		});
 	}
 
-	function updateLayer() {
+	/*function updateLayer() {
 		var layer = $('.cd-section.modal-is-visible').find('.cd-modal-bg'),
 			//layerRadius = layer.width()/2,
 			layerTop = layer.siblings('.btn').offset().top + layerRadius - $(window).scrollTop(),
@@ -66,9 +66,9 @@ jQuery(document).ready(function($){
 		layer.velocity({
 			top: layerTop - layerRadius,
 			left: layerLeft - layerRadius,
-			//scale: scale,
+			scale: scale,
 		}, 0);
-	}
+	}*/
 
 	function closeModal() {
 		var section = $('.cd-section.modal-is-visible');
