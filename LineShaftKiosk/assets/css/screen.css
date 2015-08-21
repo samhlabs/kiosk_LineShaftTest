@@ -175,160 +175,6 @@ input[type="checkbox"]:focus {
   outline-offset: -2px;
 }
 
-.cd-section {
-  padding: 1em 20%;
-  text-align: center;
-  background-color: #fff;
-}
-.cd-section p {
-  margin: 2em 0;
-  line-height: 1.6;
-}
-
-.cd-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.cd-modal::after {
-  /* gradient overlay at bottom of modal window */
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  pointer-events: none;
-  background: transparent;
-  background: #444;
-}
-.cd-modal .cd-modal-content {
-  height: 100%;
-  width: 100%;
-  padding: 6em 20%;
-  text-align: left;
-  overflow-y: auto;
-  color: #fff;
-}
-.cd-modal p {
-  margin: 2em 0;
-  font-size: 2rem;
-  line-height: 2;
-  font-weight: 100;
-}
-.modal-is-visible .cd-modal {
-  z-index: 1;
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 999;
-  -moz-transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
-  -o-transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
-  -webkit-transition: visibility 0s, opacity 0.3s, z-index 0s;
-  -webkit-transition-delay: 0s, 0s, 0s;
-  transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
-}
-.modal-is-visible .cd-modal .cd-modal-content {
-  -webkit-overflow-scrolling: touch;
-}
-
-.cd-modal-action {
-  position: relative;
-}
-.cd-modal-action .btn, .cd-modal-action .cd-modal-bg {
-  display: inline-block;
-  height: 4em;
-  background-color: #444;
-}
-.cd-modal-action .btn {
-  width: 12.5em;
-  border-radius: 5em;
-  color: #fff;
-  font-weight: 500;
-  line-height: 4em;
-  font-size: 18px;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  background: #00c59d;
-  text-transform: uppercase;
-  -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
-  -o-transition: color 0.2s 0.3s, width 0.3s 0s;
-  -webkit-transition: color 0.2s, width 0.3s;
-  -webkit-transition-delay: 0.3s, 0s;
-  transition: color 0.2s 0.3s, width 0.3s 0s;
-}
-.cd-modal-action .btn:first-child {
-  padding-top: 0;
-}
-.cd-modal-action .btn.to-circle {
-  width: 4em;
-  color: transparent;
-  -moz-transition: color 0.2s 0s, width 0.3s 0.2s;
-  -o-transition: color 0.2s 0s, width 0.3s 0.2s;
-  -webkit-transition: color 0.2s, width 0.3s;
-  -webkit-transition-delay: 0s, 0.2s;
-  transition: color 0.2s 0s, width 0.3s 0.2s;
-}
-.cd-modal-action .cd-modal-bg {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 0;
-  width: 4em;
-  border-radius: 50%;
-  opacity: 0;
-  visibility: hidden;
-  border: 2px solid #00c59d;
-  -moz-transition: visibility 0s 0.1s;
-  -o-transition: visibility 0s 0.1s;
-  -webkit-transition: visibility 0s;
-  -webkit-transition-delay: 0.1s;
-  transition: visibility 0s 0.1s;
-}
-.cd-modal-action .cd-modal-bg.is-visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.cd-modal-close {
-  position: fixed;
-  z-index: 999;
-  top: 20px;
-  right: 5%;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5) url(../images/cd-icon-close.svg) no-repeat center center;
-  /* image replacement */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  visibility: hidden;
-  opacity: 0;
-  -moz-transition: visibility 0s 0.3s, opacity 0.3s 0s;
-  -o-transition: visibility 0s 0.3s, opacity 0.3s 0s;
-  -webkit-transition: visibility 0s, opacity 0.3s;
-  -webkit-transition-delay: 0.3s, 0s;
-  transition: visibility 0s 0.3s, opacity 0.3s 0s;
-}
-.no-touch .cd-modal-close:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-is-visible .cd-modal-close {
-  visibility: visible;
-  opacity: 1;
-  -moz-transition: visibility 0s 0s, opacity 0.3s 0s;
-  -o-transition: visibility 0s 0s, opacity 0.3s 0s;
-  -webkit-transition: visibility 0s, opacity 0.3s;
-  -webkit-transition-delay: 0s, 0s;
-  transition: visibility 0s 0s, opacity 0.3s 0s;
-}
-
 .as-heading__headline, .is-typeset .headline {
   font-size: 2.625em;
   line-height: 1.152381em;
@@ -428,6 +274,167 @@ input[type="checkbox"]:focus {
 
 .as-blockquote--typeset, .is-typeset blockquote {
   margin: 0.825em 0;
+}
+
+.cd-section {
+  padding: 1em 20%;
+  text-align: center;
+  background-color: #fff;
+}
+.cd-section p {
+  margin: 2em 0;
+  line-height: 1.6;
+}
+
+.cd-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  /*&::after {
+  	/* gradient overlay at bottom of modal window 
+  	content: '';
+  	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	height: 60px;
+  	pointer-events: none;
+  	background: transparent;
+  	//background:#444;
+  	//@include background(linear-gradient(to top,rgba($color-1, 1), rgba($color-1, 0)));
+  } */
+}
+.cd-modal .cd-modal-content {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 36.6666667%;
+  padding: 0 20px;
+  float: right;
+  padding: 60px;
+  text-align: left;
+  overflow-y: auto;
+  color: #fff;
+  background: #444;
+}
+.cd-modal p {
+  margin: 2em 0;
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: 100;
+}
+.modal-is-visible .cd-modal {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 999;
+  -moz-transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
+  -o-transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
+  -webkit-transition: visibility 0s, opacity 0.3s, z-index 0s;
+  -webkit-transition-delay: 0s, 0s, 0s;
+  transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
+}
+.modal-is-visible .cd-modal .cd-modal-content {
+  -webkit-overflow-scrolling: touch;
+}
+
+.cd-modal-action {
+  position: relative;
+}
+.cd-modal-action .btn, .cd-modal-action .cd-modal-bg {
+  display: inline-block;
+  height: 4em;
+}
+.cd-modal-action .btn {
+  width: 12.5em;
+  border-radius: 5em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 4em;
+  font-size: 18px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  background: #00c59d;
+  text-transform: uppercase;
+  -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
+  -o-transition: color 0.2s 0.3s, width 0.3s 0s;
+  -webkit-transition: color 0.2s, width 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition: color 0.2s 0.3s, width 0.3s 0s;
+}
+.cd-modal-action .btn:first-child {
+  padding-top: 0;
+}
+.cd-modal-action .btn.to-circle {
+  width: 4em;
+  color: transparent;
+  -moz-transition: color 0.2s 0s, width 0.3s 0.2s;
+  -o-transition: color 0.2s 0s, width 0.3s 0.2s;
+  -webkit-transition: color 0.2s, width 0.3s;
+  -webkit-transition-delay: 0s, 0.2s;
+  transition: color 0.2s 0s, width 0.3s 0.2s;
+}
+.cd-modal-action .cd-modal-bg {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 0;
+  right: 0;
+  width: 4em;
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: visibility 0s 0.1s;
+  -o-transition: visibility 0s 0.1s;
+  -webkit-transition: visibility 0s;
+  -webkit-transition-delay: 0.1s;
+  transition: visibility 0s 0.1s;
+}
+.cd-modal-action .cd-modal-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cd-modal-close {
+  position: fixed;
+  z-index: 999;
+  top: 20px;
+  right: 5%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5) url(../images/cd-icon-close.svg) no-repeat center center;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: visibility 0s 0.3s, opacity 0.3s 0s;
+  -o-transition: visibility 0s 0.3s, opacity 0.3s 0s;
+  -webkit-transition: visibility 0s, opacity 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition: visibility 0s 0.3s, opacity 0.3s 0s;
+}
+.no-touch .cd-modal-close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-is-visible .cd-modal-close {
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: visibility 0s 0s, opacity 0.3s 0s;
+  -o-transition: visibility 0s 0s, opacity 0.3s 0s;
+  -webkit-transition: visibility 0s, opacity 0.3s;
+  -webkit-transition-delay: 0s, 0s;
+  transition: visibility 0s 0s, opacity 0.3s 0s;
 }
 
 .wrapper {

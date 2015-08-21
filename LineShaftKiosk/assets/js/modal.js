@@ -58,7 +58,7 @@ jQuery(document).ready(function($){
 
 	function updateLayer() {
 		var layer = $('.cd-section.modal-is-visible').find('.cd-modal-bg'),
-			layerRadius = layer.width()/2,
+			//layerRadius = layer.width()/2,
 			layerTop = layer.siblings('.btn').offset().top + layerRadius - $(window).scrollTop(),
 			layerLeft = layer.siblings('.btn').offset().left + layerRadius,
 			scale = scaleValue(layerTop, layerLeft, layerRadius, $(window).height(), $(window).width());
@@ -66,7 +66,7 @@ jQuery(document).ready(function($){
 		layer.velocity({
 			top: layerTop - layerRadius,
 			left: layerLeft - layerRadius,
-			scale: scale,
+			//scale: scale,
 		}, 0);
 	}
 
