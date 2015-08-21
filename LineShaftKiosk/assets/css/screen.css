@@ -389,6 +389,7 @@ input[type="checkbox"]:focus {
   top: 0;
   right: 0;
   width: 4em;
+  border-radius: 50%;
   opacity: 0;
   visibility: hidden;
   -moz-transition: visibility 0s 0.1s;
