@@ -351,7 +351,7 @@ input[type="checkbox"]:focus {
 .cd-modal-action .btn, .cd-modal-action .cd-modal-bg {
   display: inline-block;
   height: 4em;
-  background-color: #fff;
+  background: none;
 }
 .cd-modal-action .btn {
   width: 12.5em;
@@ -385,22 +385,22 @@ input[type="checkbox"]:focus {
 .cd-modal-action .cd-modal-bg {
   position: absolute;
   z-index: 1;
-  left: 50%;
+  left: 110%;
   top: 0;
   right: 0;
   width: 4em;
   border-radius: 50%;
   opacity: 0;
   visibility: hidden;
-  -moz-transition: visibility 0s 0.6s;
-  -o-transition: visibility 0s 0.6s;
-  -webkit-transition: visibility 0s;
-  -webkit-transition-delay: 0.6s;
-  transition: visibility 0s 0.6s;
+  -moz-transition: visibility 0.2s 0;
+  -o-transition: visibility 0.2s 0;
+  -webkit-transition: visibility 0.2s 0;
+  transition: visibility 0.2s 0;
 }
 .cd-modal-action .cd-modal-bg.is-visible {
   opacity: .9;
   visibility: visible;
+  background: #fff;
 }
 
 .cd-modal-close {
@@ -418,23 +418,23 @@ input[type="checkbox"]:focus {
   white-space: nowrap;
   visibility: hidden;
   opacity: 0;
-  -moz-transition: visibility 0s 0.1s, opacity 0.3s 0s;
-  -o-transition: visibility 0s 0.1s, opacity 0.3s 0s;
-  -webkit-transition: visibility 0s, opacity 0.3s;
+  -moz-transition: visibility 0s 0.1s, opacity 0.2s 0s;
+  -o-transition: visibility 0s 0.1s, opacity 0.2s 0s;
+  -webkit-transition: visibility 0s, opacity 0.2s;
   -webkit-transition-delay: 0.1s, 0s;
-  transition: visibility 0s 0.1s, opacity 0.3s 0s;
+  transition: visibility 0s 0.1s, opacity 0.2s 0s;
 }
 .no-touch .cd-modal-close:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .modal-is-visible .cd-modal-close {
   visibility: visible;
   opacity: 1;
-  -moz-transition: visibility 0s 0s, opacity 0.3s 0s;
-  -o-transition: visibility 0s 0s, opacity 0.3s 0s;
-  -webkit-transition: visibility 0s, opacity 0.3s;
+  -moz-transition: visibility 0s 0s, opacity 0.2s 0s;
+  -o-transition: visibility 0s 0s, opacity 0.2s 0s;
+  -webkit-transition: visibility 0s, opacity 0.2s;
   -webkit-transition-delay: 0s, 0s;
-  transition: visibility 0s 0s, opacity 0.3s 0s;
+  transition: visibility 0s 0s, opacity 0.2s 0s;
 }
 
 .wrapper {

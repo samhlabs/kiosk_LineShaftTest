@@ -48,7 +48,7 @@ jQuery(document).ready(function($){
 	}
 
 	function animateLayer(layer, scaleVal, bool) {
-		layer.velocity({ scale: scaleVal }, 10, function(){
+		layer.velocity({ scale: scaleVal }, 0, function(){
 			$('body').toggleClass('overflow-hidden', bool);
 			(bool) 
 				? layer.parents('.cd-section').addClass('modal-is-visible').end().off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend')
