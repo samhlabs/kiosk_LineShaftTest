@@ -392,10 +392,11 @@ input[type="checkbox"]:focus {
   border-radius: 50%;
   opacity: 0;
   visibility: hidden;
-  -moz-transition: visibility 0.2s 0;
-  -o-transition: visibility 0.2s 0;
-  -webkit-transition: visibility 0.2s 0;
-  transition: visibility 0.2s 0;
+  -moz-transition: visibility 0.2s 0.2s;
+  -o-transition: visibility 0.2s 0.2s;
+  -webkit-transition: visibility 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition: visibility 0.2s 0.2s;
 }
 .cd-modal-action .cd-modal-bg.is-visible {
   opacity: .9;
