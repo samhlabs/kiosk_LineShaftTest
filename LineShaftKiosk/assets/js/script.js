@@ -76,6 +76,11 @@ $(function() {
     FastClick.attach(document.body);
 });
 
+// Using jQuery Event API v1.3
+$('.btn').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'fact-buttons');
+});
+
 
 //$$('span', 'p', 'a');
 
